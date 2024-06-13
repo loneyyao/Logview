@@ -1,9 +1,11 @@
 package com.fanhl.logviewsample.ui.base;
 
-import android.support.annotation.LayoutRes;
-import android.support.v7.app.AppCompatActivity;
+
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.LayoutRes;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.fanhl.logview.LogViewApi;
 

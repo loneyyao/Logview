@@ -1,10 +1,12 @@
 package com.fanhl.logview.ui.presenter;
 
-import android.support.v7.widget.RecyclerView;
+
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.fanhl.logview.R;
 import com.fanhl.logview.model.LogItem;
@@ -28,6 +30,11 @@ public class LogContainerPresenter {
         this.logContainer = (LinearLayout) view.findViewById(R.id.log_container);
 
         this.typeSpinner = (Spinner) view.findViewById(R.id.type_spinner);
+
+
+//        typeSpinner.setAdapter();
+//        typeSpinner.setp
+
         this.editText = (EditText) view.findViewById(R.id.editText);
 
         this.recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
@@ -51,5 +58,6 @@ public class LogContainerPresenter {
 
     public void refreshData() {
         adapter.notifyDataSetChanged();
+        recyclerView.scrollToPosition(adapter.getItemCount()-1);
     }
 }

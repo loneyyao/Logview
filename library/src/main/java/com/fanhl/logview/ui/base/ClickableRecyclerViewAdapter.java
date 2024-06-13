@@ -1,8 +1,10 @@
 package com.fanhl.logview.ui.base;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,7 +64,7 @@ public abstract class ClickableRecyclerViewAdapter<CVH extends ClickableRecycler
     }
 
     @Override
-    public void onBindViewHolder(final CVH holder, final int position) {
+    public void onBindViewHolder(final CVH holder, @SuppressLint("RecyclerView") final int position) {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

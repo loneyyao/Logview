@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LogView.iml" filepath="$PROJECT_DIR$/LogView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LogView.iml" filepath="$PROJECT_DIR$/LogView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LogView.iml" filepath="$PROJECT_DIR$/.idea/LogView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/LogView.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/LogView.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/LogView.library.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/LogView.library.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/LogView.library.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/LogView.library.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/LogView.library.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/LogView.library.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/LogView.sample.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/LogView.sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/LogView.sample.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/LogView.sample.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/LogView.sample.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/LogView.sample.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/LogView.sample.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/LogView.sample.unitTest.iml" />
     </modules>
   </component>
 </project>

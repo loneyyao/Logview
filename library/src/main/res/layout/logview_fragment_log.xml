@@ -27,6 +27,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:visibility="gone"
                 android:orientation="horizontal">
 
                 <Spinner
@@ -41,6 +42,7 @@
                 android:layout_height="36dp"/>
 
             <LinearLayout
+                android:visibility="gone"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -55,19 +57,21 @@
         </LinearLayout>
 
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/logview_item_log"/>
 
     </LinearLayout>
 
     <ToggleButton
         android:id="@+id/toggle"
-        android:layout_width="48dp"
+        android:layout_width="wrap_content"
+        android:textOn="关闭日志"
+        android:textOff="开启日志"
         android:layout_height="36dp"
         android:layout_gravity="center_horizontal|top"
         android:padding="0dp"/>

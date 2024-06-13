@@ -8,7 +8,7 @@ import java.util.Locale;
  * Created by fanhl on 16/5/1.
  */
 public class DateUtil {
-    public static final String FORMAT_msS = "mm:ss.SSS";
+    public static final String FORMAT_msS = "yyyy-MM-dd HH:mm:ss.SSS";
 
     private static SimpleDateFormat simpleDateFormat;
 
