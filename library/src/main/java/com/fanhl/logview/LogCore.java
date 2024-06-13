@@ -16,7 +16,7 @@ import java.util.LinkedList;
  */
 public class LogCore {
     private static final int STABILIZER_TIME = 100;
-    private static final int LIMIT_LENGTH    = 100;
+    private static final int LIMIT_LENGTH = 100;
 
     private static final Stabilizer stabilizer;
 
@@ -40,8 +40,12 @@ public class LogCore {
         bufferFilteredLogs = new LinkedList<LogItem>();//Collections.synchronizedList(new LinkedList<LogItem>());
 
         logItemFilter = new ListUtil.Filter<LogItem>() {
-            @Override public boolean filter(LogItem logItem) {
-                return logFilterCondition == null || logItem.getLevel().getIndex() >= logFilterCondition.getLogLevel().getIndex();
+            @Override
+            public boolean filter(LogItem logItem) {
+                return logFilterCondition == null || logFilterCondition.getQuery()==null ||
+                        (logItem.getLevel().getIndex() >= logFilterCondition.getLogLevel().getIndex()
+                                && ((logItem.getMessage() != null && logItem.getMessage().contains(logFilterCondition.getQuery()))
+                                    || (logItem.getTag() != null && logItem.getTag().contains(logFilterCondition.getQuery()))));
             }
         };
 
@@ -90,7 +94,8 @@ public class LogCore {
         if (LogCore.logFilterCondition != null && LogCore.logFilterCondition.getLogLevel() == logFilterCondition.getLogLevel() && StringUtil.equals(LogCore.logFilterCondition.getQuery(), logFilterCondition.getQuery())) {
             return;
         }
-        LogCore.logFilterCondition = logFilterCondition;
+        LogCore.logFilterCondition.setLogLevel(logFilterCondition.getLogLevel());
+        LogCore.logFilterCondition.setQuery(logFilterCondition.getQuery());
 
         synchronized (LogCore.class) {
             filteredLogs.clear();

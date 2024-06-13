@@ -7,4 +7,6 @@
     <color name="logview_log_warning">#BBBB23</color>
     <color name="logview_log_error">#FF0006</color>
     <color name="logview_log_assert">#8F0005</color>
+
+    <color name="logview_filter_bg">#FFFFFF</color>
 </resources>
