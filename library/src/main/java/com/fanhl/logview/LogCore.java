@@ -104,6 +104,10 @@ public class LogCore {
         return filteredLogs;
     }
 
+    public static void setLogPerTime(long mill) {
+        stabilizer.setStabilizerTime(mill);
+    }
+
     public interface Callback {
         void onFilteredLogsChanged();
 

@@ -53,4 +53,8 @@ public class LogViewApi {
         LogCore.addLog(new LogItem(System.currentTimeMillis(), LogLevel.A, tag, msg));
     }
 
+    public static void setLogPerTime(long mill){
+        LogCore.setLogPerTime(mill);
+    }
+
 }
