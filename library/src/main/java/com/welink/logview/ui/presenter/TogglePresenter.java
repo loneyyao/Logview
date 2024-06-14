@@ -1,10 +1,11 @@
-package com.fanhl.logview.ui.presenter;
+package com.welink.logview.ui.presenter;
 
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 
-import com.fanhl.logview.R;
+import com.welink.logview.R;
+
 
 /**
  * Created by fanhl on 16/5/8.

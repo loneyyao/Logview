@@ -1,4 +1,4 @@
-package com.fanhl.logview.ui.presenter;
+package com.welink.logview.ui.presenter;
 
 
 import android.text.Editable;
@@ -13,14 +13,14 @@ import android.widget.Spinner;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.fanhl.logview.LogCore;
-import com.fanhl.logview.R;
-import com.fanhl.logview.model.LogFilterCondition;
-import com.fanhl.logview.model.LogItem;
-import com.fanhl.logview.model.LogLevel;
-import com.fanhl.logview.ui.adapter.LogAdapter;
-import com.fanhl.logview.ui.base.ClickableRecyclerViewAdapter;
-import com.fanhl.logview.util.SystemUtil;
+import com.welink.logview.LogCore;
+import com.welink.logview.R;
+import com.welink.logview.model.LogFilterCondition;
+import com.welink.logview.model.LogItem;
+import com.welink.logview.model.LogLevel;
+import com.welink.logview.ui.adapter.LogAdapter;
+import com.welink.logview.ui.base.ClickableRecyclerViewAdapter;
+import com.welink.logview.util.SystemUtil;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.fanhl.logview.ui.adapter;
+package com.welink.logview.ui.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,11 +9,11 @@ import android.widget.TextView;
 import androidx.annotation.ColorRes;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.fanhl.logview.LogCore;
-import com.fanhl.logview.R;
-import com.fanhl.logview.model.LogItem;
-import com.fanhl.logview.model.LogLevel;
-import com.fanhl.logview.ui.base.ClickableRecyclerViewAdapter;
+import com.welink.logview.LogCore;
+import com.welink.logview.R;
+import com.welink.logview.model.LogItem;
+import com.welink.logview.model.LogLevel;
+import com.welink.logview.ui.base.ClickableRecyclerViewAdapter;
 
 import java.util.LinkedList;
 

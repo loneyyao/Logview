@@ -1,11 +1,11 @@
-package com.fanhl.logview;
+package com.welink.logview;
 
-import com.fanhl.logview.model.LogFilterCondition;
-import com.fanhl.logview.model.LogItem;
-import com.fanhl.logview.model.LogLevel;
-import com.fanhl.logview.util.ListUtil;
-import com.fanhl.logview.util.Stabilizer;
-import com.fanhl.logview.util.StringUtil;
+import com.welink.logview.model.LogFilterCondition;
+import com.welink.logview.model.LogItem;
+import com.welink.logview.model.LogLevel;
+import com.welink.logview.util.ListUtil;
+import com.welink.logview.util.Stabilizer;
+import com.welink.logview.util.StringUtil;
 
 import java.util.LinkedList;
 

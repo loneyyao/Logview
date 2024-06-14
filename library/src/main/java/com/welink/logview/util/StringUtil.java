@@ -1,4 +1,4 @@
-package com.fanhl.logview.util;
+package com.welink.logview.util;
 
 /**
  * Created by fanhl on 16/5/4.

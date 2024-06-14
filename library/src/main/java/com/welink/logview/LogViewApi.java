@@ -1,9 +1,9 @@
-package com.fanhl.logview;
+package com.welink.logview;
 
 import android.app.Activity;
 
-import com.fanhl.logview.model.LogItem;
-import com.fanhl.logview.model.LogLevel;
+import com.welink.logview.model.LogItem;
+import com.welink.logview.model.LogLevel;
 
 /**
  * The Api.

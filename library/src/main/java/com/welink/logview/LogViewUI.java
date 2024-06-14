@@ -1,10 +1,10 @@
-package com.fanhl.logview;
+package com.welink.logview;
 
 import android.app.Activity;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
-import com.fanhl.logview.ui.fragment.LogFragment;
+import com.welink.logview.ui.fragment.LogFragment;
 
 import java.util.ArrayList;
 import java.util.List;

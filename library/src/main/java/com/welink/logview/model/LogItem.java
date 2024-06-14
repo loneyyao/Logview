@@ -1,7 +1,6 @@
-package com.fanhl.logview.model;
+package com.welink.logview.model;
 
-import com.fanhl.logview.R;
-import com.fanhl.logview.util.DateUtil;
+import com.welink.logview.util.DateUtil;
 
 /**
  * Created by fanhl on 16/5/4.

@@ -1,4 +1,4 @@
-package com.fanhl.logview.util;
+package com.welink.logview.util;
 
 /**
  * 防抖器

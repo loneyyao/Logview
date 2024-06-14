@@ -2,7 +2,7 @@ package com.fanhl.logviewsample;
 
 import android.app.Application;
 
-import com.fanhl.logview.LogViewApi;
+import com.welink.logview.LogViewApi;
 import com.fanhl.logviewsample.util.Log;
 
 /**
