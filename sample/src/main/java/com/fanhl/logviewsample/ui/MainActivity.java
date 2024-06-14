@@ -72,13 +72,13 @@ public class MainActivity extends BaseActivity {
         new AsyncTask<Void, Void, Void>() {
             @Override
             protected Void doInBackground(Void... params) {
-                for (int i = 0; i < 100; i++) {
+                for (int i = 0; i < 1000; i++) {
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    Log.d(TAG, "loop i:" + i + "/100");
+                    Log.d(TAG, "loop i:" + i + "/1000");
                 }
                 return null;
             }

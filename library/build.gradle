@@ -21,6 +21,19 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     ndkVersion '21.1.6352462'
+
+    android.libraryVariants.all { variant ->
+        variant.outputs.all { output ->
+
+            String name = outputFileName.toString()
+//            log("原始的fileName---------------------->${name}------> ")
+            def suffix = name.substring(name.lastIndexOf("-") + 1)
+            def fileName
+
+            fileName = "lib-logview-${suffix}"
+            outputFileName = fileName
+        }
+    }
 }
 
 dependencies {

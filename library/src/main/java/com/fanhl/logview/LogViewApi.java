@@ -57,4 +57,8 @@ public class LogViewApi {
         LogCore.setLogPerTime(mill);
     }
 
+    public static void setLogCount(int count){
+        LogCore.setLogCount(count);
+    }
+
 }

@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.fanhl.logview.LogCore;
@@ -73,12 +74,12 @@ public class LogContainerPresenter {
 
     public void initData() {
         List<String> logLevels = new ArrayList<>();
-        logLevels.add("V");
-        logLevels.add("D");
-        logLevels.add("I");
-        logLevels.add("W");
-        logLevels.add("E");
-        logLevels.add("A");
+        logLevels.add("verbose");
+        logLevels.add("debug");
+        logLevels.add("info");
+        logLevels.add("warn");
+        logLevels.add("error");
+        logLevels.add("assert");
         adapter = new LogAdapter(recyclerView.getContext(), recyclerView);
         recyclerView.setAdapter(adapter);
         adapter.setOnItemClickListener(new ClickableRecyclerViewAdapter.OnItemClickListener() {
@@ -90,6 +91,11 @@ public class LogContainerPresenter {
         });
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(recyclerView.getContext(), R.layout.log_level_item, logLevels) {
+            @Nullable
+            @Override
+            public String getItem(int position) {
+                return "Level: "+logLevels.get(position);
+            }
         };
         typeSpinner.setAdapter(adapter);
         typeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -97,22 +103,22 @@ public class LogContainerPresenter {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String level = logLevels.get(position);
                 switch (level) {
-                    case "V":
+                    case "verbose":
                         logFilterCondition.setLogLevel(LogLevel.V);
                         break;
-                    case "D":
+                    case "debug":
                         logFilterCondition.setLogLevel(LogLevel.D);
                         break;
-                    case "I":
+                    case "info":
                         logFilterCondition.setLogLevel(LogLevel.I);
                         break;
-                    case "W":
+                    case "warn":
                         logFilterCondition.setLogLevel(LogLevel.W);
                         break;
-                    case "E":
+                    case "error":
                         logFilterCondition.setLogLevel(LogLevel.E);
                         break;
-                    case "A":
+                    case "assert":
                         logFilterCondition.setLogLevel(LogLevel.A);
                         break;
                     default:

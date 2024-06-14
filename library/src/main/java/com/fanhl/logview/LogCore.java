@@ -16,7 +16,7 @@ import java.util.LinkedList;
  */
 public class LogCore {
     private static final int STABILIZER_TIME = 100;
-    private static final int LIMIT_LENGTH = 100;
+    private static int LIMIT_LENGTH = 100;
 
     private static final Stabilizer stabilizer;
 
@@ -42,10 +42,16 @@ public class LogCore {
         logItemFilter = new ListUtil.Filter<LogItem>() {
             @Override
             public boolean filter(LogItem logItem) {
-                return logFilterCondition == null || logFilterCondition.getQuery()==null ||
-                        (logItem.getLevel().getIndex() >= logFilterCondition.getLogLevel().getIndex()
-                                && ((logItem.getMessage() != null && logItem.getMessage().contains(logFilterCondition.getQuery()))
-                                    || (logItem.getTag() != null && logItem.getTag().contains(logFilterCondition.getQuery()))));
+                if (logFilterCondition == null) return true;
+                if (logFilterCondition.getQuery()==null) {
+                    return logItem.getLevel().getIndex() >= logFilterCondition.getLogLevel().getIndex();
+                }else{
+                    return logItem.getLevel().getIndex() >= logFilterCondition.getLogLevel().getIndex()
+                            && ((logItem.getMessage() != null && logItem.getMessage().contains(logFilterCondition.getQuery()))
+                            || (logItem.getTag() != null && logItem.getTag().contains(logFilterCondition.getQuery())))
+                            ;
+
+                }
             }
         };
 
@@ -87,6 +93,10 @@ public class LogCore {
 
     public static void setCallback(Callback callback) {
         LogCore.callback = callback;
+    }
+
+    public static void setLogCount(int count){
+        LIMIT_LENGTH = count;
     }
 
     public static void setLogFilterCondition(LogFilterCondition logFilterCondition) {
