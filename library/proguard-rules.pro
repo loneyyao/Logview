@@ -16,6 +16,6 @@
 #   public *;
 #}
 
--keepclassmembers class com.welink.logview.LogViewApi {
+-keepclassmembers class com.loneyyao.logview.LogViewApi {
    public *;
 }

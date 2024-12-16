@@ -1,4 +1,4 @@
-package com.welink.logview.ui.adapter;
+package com.loneyyao.logview.ui.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,11 +9,11 @@ import android.widget.TextView;
 import androidx.annotation.ColorRes;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.welink.logview.LogCore;
-import com.welink.logview.R;
-import com.welink.logview.model.LogItem;
-import com.welink.logview.model.LogLevel;
-import com.welink.logview.ui.base.ClickableRecyclerViewAdapter;
+import com.loneyyao.logview.LogCore;
+import com.loneyyao.logview.R;
+import com.loneyyao.logview.model.LogItem;
+import com.loneyyao.logview.model.LogLevel;
+import com.loneyyao.logview.ui.base.ClickableRecyclerViewAdapter;
 
 import java.util.LinkedList;
 

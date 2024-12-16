@@ -1,6 +1,6 @@
-package com.welink.logview.model;
+package com.loneyyao.logview.model;
 
-import com.welink.logview.util.DateUtil;
+import com.loneyyao.logview.util.DateUtil;
 
 /**
  * Created by fanhl on 16/5/4.

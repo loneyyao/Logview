@@ -11,6 +11,9 @@
       <entry name="!?*.kt" />
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="logview.library" target="17" />
+      <module name="logview.sample" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

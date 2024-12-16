@@ -1,4 +1,4 @@
-package com.welink.logview.util;
+package com.loneyyao.logview.util;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;

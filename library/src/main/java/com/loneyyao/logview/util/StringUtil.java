@@ -1,4 +1,4 @@
-package com.welink.logview.util;
+package com.loneyyao.logview.util;
 
 /**
  * Created by fanhl on 16/5/4.

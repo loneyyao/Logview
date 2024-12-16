@@ -1,4 +1,4 @@
-package com.welink.logview.ui.base;
+package com.loneyyao.logview.ui.base;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

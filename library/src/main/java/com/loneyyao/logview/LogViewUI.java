@@ -1,10 +1,10 @@
-package com.welink.logview;
+package com.loneyyao.logview;
 
 import android.app.Activity;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
-import com.welink.logview.ui.fragment.LogFragment;
+import com.loneyyao.logview.ui.fragment.LogFragment;
 
 import java.util.ArrayList;
 import java.util.List;

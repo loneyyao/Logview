@@ -1,4 +1,4 @@
-package com.welink.logview.model;
+package com.loneyyao.logview.model;
 
 /**
  * Created by fanhl on 16/5/4.

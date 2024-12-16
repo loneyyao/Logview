@@ -1,9 +1,9 @@
-package com.welink.logview;
+package com.loneyyao.logview;
 
 import android.app.Activity;
 
-import com.welink.logview.model.LogItem;
-import com.welink.logview.model.LogLevel;
+import com.loneyyao.logview.model.LogItem;
+import com.loneyyao.logview.model.LogLevel;
 
 /**
  * The Api.

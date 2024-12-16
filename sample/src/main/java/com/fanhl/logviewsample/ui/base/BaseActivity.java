@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.LayoutRes;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.welink.logview.LogViewApi;
+import com.loneyyao.logview.LogViewApi;
 
 /**
  * Created by fanhl on 16/5/5.

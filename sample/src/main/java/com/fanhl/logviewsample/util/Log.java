@@ -1,6 +1,6 @@
 package com.fanhl.logviewsample.util;
 
-import com.welink.logview.LogViewApi;
+import com.loneyyao.logview.LogViewApi;
 
 /**
  * A Custom Log with LogViewApi.

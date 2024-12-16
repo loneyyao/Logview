@@ -1,10 +1,10 @@
-package com.welink.logview.ui.presenter;
+package com.loneyyao.logview.ui.presenter;
 
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 
-import com.welink.logview.R;
+import com.loneyyao.logview.R;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.welink.logview.ui.fragment;
+package com.loneyyao.logview.ui.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -9,10 +9,10 @@ import android.widget.CompoundButton;
 
 import androidx.annotation.Nullable;
 
-import com.welink.logview.LogViewUI;
-import com.welink.logview.R;
-import com.welink.logview.ui.presenter.LogContainerPresenter;
-import com.welink.logview.ui.presenter.TogglePresenter;
+import com.loneyyao.logview.LogViewUI;
+import com.loneyyao.logview.R;
+import com.loneyyao.logview.ui.presenter.LogContainerPresenter;
+import com.loneyyao.logview.ui.presenter.TogglePresenter;
 
 /**
  * Created by fanhl on 16/5/5.
